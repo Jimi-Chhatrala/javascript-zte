@@ -27,6 +27,7 @@ let job2 = "coach";
 
 console.log(myFirstJob);
 */
+/*
 true;
 console.log(true);
 
@@ -55,7 +56,9 @@ console.log(typeof year);
 
 // javascript bug - returns object instead of null
 console.log(typeof null);
+*/
 
+/*
 let name;
 name = "Jimi";
 
@@ -79,3 +82,38 @@ console.log(myStatus);
 lastName = "Chhatrala";
 console.log(lastName);
 console.log(typeof lastName);
+
+*/
+
+// Math Operators
+const now = 2037;
+const ageJimi = now - 1991;
+const ageSara = now - 2018;
+console.log(ageJimi, ageSara);
+// console.log(ageSara);
+
+console.log(ageJimi * 2, ageJimi / 10, 2 ** 3);
+// 2 ** 3 => means 2 to the power of 3 => 2 * 2 * 2
+
+const firstName = "Jimi";
+const lastname = "Chhatrala";
+console.log(firstName + " " + lastname);
+
+// typeof operator
+
+// Assignment operators
+let x = 10 + 5; // 15
+x += 10; // x = x + 10 = 10 + 15 = 25
+x *= 4; // x = x + 4 = 25 * 4 = 100
+x++; // x = x + 1 = 101
+x--; // x = x - 1 = 100
+x--; // x = x - 1 = 99
+console.log(x);
+
+// Comparison operators
+console.log(ageJimi > ageSara);
+console.log(ageJimi >= 18);
+
+const isFullAge = ageSara >= 18;
+
+console.log(now - 1991 > now - 2018);
