@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 
 console.log(40 + 8 + 23 - 10);
@@ -25,3 +26,32 @@ let job1 = "programmer"; // descriptive variable names not recomment
 let job2 = "coach";
 
 console.log(myFirstJob);
+*/
+true;
+console.log(true);
+
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+
+console.log(typeof true);
+console.log(typeof false);
+console.log(typeof javascriptIsFun);
+console.log(typeof 23);
+console.log(typeof "Jimi");
+
+// Dynamic typing
+javascriptIsFun = "Fun!";
+console.log(typeof javascriptIsFun);
+
+// undefined
+let year;
+console.log(year);
+console.log(typeof year);
+
+// dynamic typing
+year = 1990;
+console.log(year);
+console.log(typeof year);
+
+// javascript bug - returns object instead of null
+console.log(typeof null);
