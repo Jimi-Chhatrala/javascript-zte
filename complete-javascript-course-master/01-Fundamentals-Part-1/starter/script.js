@@ -55,3 +55,27 @@ console.log(typeof year);
 
 // javascript bug - returns object instead of null
 console.log(typeof null);
+
+let name;
+name = "Jimi";
+
+let age = 30;
+age = 31;
+
+const birthYear = 1995;
+// birthYear = 1996;
+
+// const nothingAssigned;
+
+var job = "programmer";
+job = "coder";
+console.log(job);
+
+var myStatus = "Married";
+console.log(myStatus);
+var myStatus = "Complicated";
+console.log(myStatus);
+
+lastName = "Chhatrala";
+console.log(lastName);
+console.log(typeof lastName);
