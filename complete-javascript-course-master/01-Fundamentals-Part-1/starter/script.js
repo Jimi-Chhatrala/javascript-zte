@@ -178,7 +178,7 @@ console.log(`String
 with multiple other 
 new lines`);
 */
-
+/*
 const age = 15;
 // const isOldEnough = age >= 18;
 
@@ -202,3 +202,30 @@ if (birthYear <= 2000) {
 }
 
 console.log(century);
+*/
+
+// CODE CHALLENGE 2
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJimi = 92;
+const heightJimi = 1.95;
+
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJimi = 85;
+// const heightJimi = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJimi = massJimi / (heightJimi * heightJimi);
+console.log(BMIMark, BMIJimi);
+
+if (BMIMark > BMIJimi) {
+  console.log(
+    `Mark's BMI (${BMIMark}) is higher than Jimi's BMI (${BMIJimi})!`
+  );
+} else {
+  console.log(
+    `Jimi's BMI (${BMIJimi}) is higher than Mark's BMI (${BMIMark})!`
+  );
+}
