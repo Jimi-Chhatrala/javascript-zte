@@ -119,7 +119,7 @@ const isFullAge = ageSara >= 18;
 
 console.log(now - 1991 > now - 2018);
 */
-
+/*
 const now = 2037;
 const ageJimi = now - 1991;
 const ageSara = now - 2018;
@@ -135,3 +135,22 @@ console.log(x, y);
 // const averageAge = ageJimi + ageSara / 2; // 55.5
 const averageAge = (ageJimi + ageSara) / 2; // 32.5
 console.log(ageJimi, ageSara, averageAge);
+*/
+
+// CODE CHALLENGE 1
+
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJimi = 92;
+// const heightJimi = 1.95;
+
+const massMark = 95;
+const heightMark = 1.88;
+const massJimi = 85;
+const heightJimi = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJimi = massJimi / (heightJimi * heightJimi);
+const markHigherBMI = BMIMark > BMIJimi;
+
+console.log(BMIMark, BMIJimi, markHigherBMI);
