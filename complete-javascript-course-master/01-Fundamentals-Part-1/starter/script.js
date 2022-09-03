@@ -136,7 +136,7 @@ console.log(x, y);
 const averageAge = (ageJimi + ageSara) / 2; // 32.5
 console.log(ageJimi, ageSara, averageAge);
 */
-
+/*
 // CODE CHALLENGE 1
 
 // const massMark = 78;
@@ -154,3 +154,26 @@ const BMIJimi = massJimi / (heightJimi * heightJimi);
 const markHigherBMI = BMIMark > BMIJimi;
 
 console.log(BMIMark, BMIJimi, markHigherBMI);
+*/
+
+const firstName = "Jimi";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+
+const jimi =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(jimi);
+
+const jimiNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(jimiNew);
+
+console.log(`Just a regular's string"s...`);
+
+console.log("String \n\
+with multiple \n\
+lines");
+
+console.log(`String
+with multiple other 
+new lines`);
