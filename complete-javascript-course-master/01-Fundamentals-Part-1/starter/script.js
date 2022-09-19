@@ -205,7 +205,7 @@ console.log(century);
 */
 
 // CODE CHALLENGE 2
-
+/*
 const massMark = 78;
 const heightMark = 1.69;
 const massJimi = 92;
@@ -229,3 +229,35 @@ if (BMIMark > BMIJimi) {
     `Jimi's BMI (${BMIJimi}) is higher than Mark's BMI (${BMIMark})!`
   );
 }
+*/
+
+// type conversion
+
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jimi"));
+console.log(typeof NaN);
+
+console.log(String(24), 24);
+
+// type coercion
+
+console.log("I am " + 23 + " years old");
+console.log("I am " + "23" + " years old");
+console.log("I am " + String(23) + " years old");
+console.log("23" - "10" - 3);
+console.log("23" + "10" + 3);
+console.log("23" * "2");
+console.log("23" / "2");
+console.log("23" > "18");
+
+// Just Guess Output
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+console.log(2 + 3 + 4 + "5");
+console.log("10" - "4" - "3" - 2 + "5");
