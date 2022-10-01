@@ -304,7 +304,7 @@ if (height) {
 // Equality Operators == vs ===
 
 // *************************************************
-
+/*
 // const age = 18;
 const age = "18";
 
@@ -328,3 +328,36 @@ if (favoriteNumber === 5) {
 }
 
 if (favoriteNumber !== 5) console.log(`Why not 5..!`);
+*/
+
+// *********************************************
+
+// Logical Operators AND, OR, NOT
+
+// *********************************************
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+// const hasGoodVision = false;
+
+console.log(`AND : `, hasDriversLicense && hasGoodVision);
+console.log(`OR : `, hasDriversLicense || hasGoodVision);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+if (hasDriversLicense && hasGoodVision) {
+  console.log(`Jimi is able to drive`);
+} else {
+  console.log(`Someone else should drive`);
+}
+
+const isTired = false;
+
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log(`Jimi is able to dirve`);
+} else {
+  console.log(`Someone else should drive`);
+}
