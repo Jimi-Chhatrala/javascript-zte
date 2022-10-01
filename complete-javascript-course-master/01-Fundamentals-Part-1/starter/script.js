@@ -232,7 +232,7 @@ if (BMIMark > BMIJimi) {
 */
 
 // type conversion
-
+/*
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
@@ -241,9 +241,9 @@ console.log(Number("Jimi"));
 console.log(typeof NaN);
 
 console.log(String(24), 24);
-
+*/
 // type coercion
-
+/*
 console.log("I am " + 23 + " years old");
 console.log("I am " + "23" + " years old");
 console.log("I am " + String(23) + " years old");
@@ -252,12 +252,48 @@ console.log("23" + "10" + 3);
 console.log("23" * "2");
 console.log("23" / "2");
 console.log("23" > "18");
-
+*/
 // Just Guess Output
-
+/*
 let n = "1" + 1;
 n = n - 1;
 console.log(n);
 
 console.log(2 + 3 + 4 + "5");
 console.log("10" - "4" - "3" - 2 + "5");
+*/
+
+// **************************************************
+
+// Truthy and Falsy Values
+
+// **************************************************
+
+// 5 falsy values:
+
+// 0,'', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+// const money = 0;
+const money = 100;
+
+if (money) {
+  console.log(`Don't spend it all`);
+} else {
+  console.log(`You should get a job`);
+}
+
+// let height;
+// let height = 123;
+let height = 0;
+
+if (height) {
+  console.log(`Height is defined..!`);
+} else {
+  console.log(`Height is UNDEFINED..!`);
+}
