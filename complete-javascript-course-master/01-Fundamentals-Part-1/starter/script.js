@@ -361,3 +361,36 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log(`Someone else should drive`);
 }
+
+// Problem Definitation
+
+// const scoreOfTeamA = (96 + 108 + 89) / 3;
+// const scoreOfTeamB = (88 + 91 + 110) / 3;
+// console.log(scoreOfTeamA, scoreOfTeamB);
+
+// if (scoreOfTeamA > scoreOfTeamB) {
+//   console.log(`Team A wins the cup 🏆`);
+// } else if (scoreOfTeamA < scoreOfTeamB) {
+//   console.log(`Team B wins the cup 🏆`);
+//   // } else {
+// } else if (scoreOfTeamA === scoreOfTeamB) {
+//   console.log(`Both teams win's the cup 🏆`);
+// }
+
+const scoreOfTeamA = (97 + 101 + 110) / 3;
+const scoreOfTeamB = (98 + 75 + 135) / 3;
+console.log(scoreOfTeamA, scoreOfTeamB);
+
+if (scoreOfTeamA > scoreOfTeamB && scoreOfTeamA >= 100) {
+  console.log(`Team A wins the cup 🏆`);
+} else if (scoreOfTeamA < scoreOfTeamB && scoreOfTeamB >= 100) {
+  console.log(`Team B wins the cup 🏆`);
+} else if (
+  scoreOfTeamA === scoreOfTeamB &&
+  scoreOfTeamA >= 100 &&
+  scoreOfTeamB >= 100
+) {
+  console.log(`Both teams win's the cup 🏆`);
+} else {
+  console.log(`No one win's the cup 😪`);
+}
