@@ -401,7 +401,7 @@ if (scoreOfTeamA > scoreOfTeamB && scoreOfTeamA >= 100) {
 // Switch Statement
 
 // ***************************************************
-
+/*
 const day = "thursday";
 
 switch (day) {
@@ -437,11 +437,11 @@ switch (day) {
 if (day === "monday") {
   console.log("Today is Monday");
   console.log("First working day of the week");
-} else if (day == "tuesday") {
+} else if (day === "tuesday") {
   console.log("Today is Tuesday");
-} else if (day == "wednesday" || day === "thursday") {
+} else if (day === "wednesday" || day === "thursday") {
   console.log("Wednesday and Thursday is the mid-week day.");
-} else if (day == "friday") {
+} else if (day === "friday") {
   console.log("Now it time for friday");
   console.log("Last Working day of the week");
 } else if (day === "saturday" || day === "sunday") {
@@ -449,3 +449,33 @@ if (day === "monday") {
 } else {
   console.log("Not a valid day..!");
 }
+*/
+
+// ************************************************
+
+// Expressions and Statements
+
+// ************************************************
+
+// Expressions
+
+/**
+ * 3 + 4
+ * 1991
+ * true && false && !false
+ */
+
+// Statements
+
+if (10 > 5) {
+  const bigNo = "10 is bigger";
+}
+
+/**
+ * ${2030 - 1990}
+ * ${myName}
+ */
+
+const myName = "Jimi";
+
+console.log(`I'm ${2030 - 1990} yeard old ${myName}.`);
