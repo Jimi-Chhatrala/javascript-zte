@@ -335,7 +335,7 @@ if (favoriteNumber !== 5) console.log(`Why not 5..!`);
 // Logical Operators AND, OR, NOT
 
 // *********************************************
-
+/*
 const hasDriversLicense = true;
 const hasGoodVision = true;
 // const hasGoodVision = false;
@@ -393,4 +393,59 @@ if (scoreOfTeamA > scoreOfTeamB && scoreOfTeamA >= 100) {
   console.log(`Both teams win's the cup 🏆`);
 } else {
   console.log(`No one win's the cup 😪`);
+}
+*/
+
+// ***************************************************
+
+// Switch Statement
+
+// ***************************************************
+
+const day = "thursday";
+
+switch (day) {
+  case "monday":
+    console.log("Today is Monday");
+    console.log("First working day of the week");
+    break;
+
+  case "tuesday":
+    console.log("Today is Tuesday");
+    break;
+
+  case "wednesday":
+    console.log("This is wednesday");
+
+  case "thursday":
+    console.log("Hey its thursday");
+    break;
+
+  case "friday":
+    console.log("Now it time for friday");
+    console.log("Last Working day of the week");
+    break;
+
+  case "saturday":
+  case "sunday":
+    console.log("Saturday and Sunday are weekends. :)enjoy");
+    break;
+  default:
+    console.log("Not a valid day..!");
+}
+
+if (day === "monday") {
+  console.log("Today is Monday");
+  console.log("First working day of the week");
+} else if (day == "tuesday") {
+  console.log("Today is Tuesday");
+} else if (day == "wednesday" || day === "thursday") {
+  console.log("Wednesday and Thursday is the mid-week day.");
+} else if (day == "friday") {
+  console.log("Now it time for friday");
+  console.log("Last Working day of the week");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Saturday and Sunday are weekends. :)enjoy");
+} else {
+  console.log("Not a valid day..!");
 }
