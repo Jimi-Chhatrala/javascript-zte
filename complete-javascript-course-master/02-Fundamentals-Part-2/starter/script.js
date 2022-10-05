@@ -160,3 +160,32 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(2000, "Jimi"));
 console.log(yearsUntilRetirement(1955, "Ramkumar"));
 */
+
+// ******************************************
+
+// Problem Statement
+
+// ******************************************
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+let scoreOfTeamA = calcAverage(44, 23, 71);
+let scoreOfTeamB = calcAverage(65, 54, 49);
+console.log(scoreOfTeamA, scoreOfTeamB);
+
+const checkWinner = function (avgTeamA, avgTeamB) {
+  if (avgTeamA >= 2 * avgTeamB) {
+    console.log(`Team A wins 🏆 (${avgTeamA} vs. ${avgTeamB})`);
+  } else if (avgTeamB >= 2 * avgTeamA) {
+    console.log(`Team B wins 🏆 (${avgTeamB} vs. ${avgTeamA})`);
+  } else {
+    console.log(`No Teams wins`);
+  }
+};
+
+checkWinner(scoreOfTeamA, scoreOfTeamB);
+
+scoreOfTeamA = calcAverage(85, 54, 41);
+scoreOfTeamB = calcAverage(23, 34, 27);
+console.log(scoreOfTeamA, scoreOfTeamB);
+checkWinner(scoreOfTeamA, scoreOfTeamB);
