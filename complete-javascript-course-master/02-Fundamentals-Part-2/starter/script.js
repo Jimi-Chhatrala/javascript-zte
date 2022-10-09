@@ -196,7 +196,7 @@ checkWinner(scoreOfTeamA, scoreOfTeamB);
 // Arrays
 
 // ****************************************************
-
+/*
 const friend1 = "Ram";
 const friend2 = "Laksman";
 const friend3 = "Bharat";
@@ -243,3 +243,53 @@ const ages = [
 ];
 
 console.log(ages);
+*/
+
+// *************************************************
+
+// Array Methods
+
+// *************************************************
+
+const friends = ["Ram", "Laksman", "Bharat"];
+console.log(friends);
+
+// Adding an element at back
+
+const newLength = friends.push("Satrugna");
+console.log(friends);
+console.log(newLength);
+
+// Adding an element at front
+
+friends.unshift("Sita");
+console.log(friends);
+
+// Removing an element from back
+friends.pop(); //last element
+const popped = friends.pop(); //Now second last
+console.log(popped);
+console.log(friends);
+
+// Removing an element from front
+
+friends.shift(); // First Element
+console.log(friends);
+
+console.log(friends.indexOf("Ram"));
+console.log(friends.indexOf("Laksman"));
+console.log(friends.indexOf("Bharat"));
+console.log(friends.indexOf("XYZ"));
+
+friends.push("Jimi");
+friends.push(24);
+
+console.log(friends.includes("Jimi"));
+console.log(friends.includes("Chhatrala"));
+console.log(friends.includes("JIMI")); // Strict Check, so returns false
+console.log(friends.includes("24"));
+console.log(friends.includes(24)); // For number also
+
+if (friends.includes("Jimi")) {
+  console.log("Hey, Jimi is there in array.");
+}
