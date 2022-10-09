@@ -166,7 +166,7 @@ console.log(yearsUntilRetirement(1955, "Ramkumar"));
 // Problem Statement
 
 // ******************************************
-
+/*
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 
 let scoreOfTeamA = calcAverage(44, 23, 71);
@@ -189,3 +189,57 @@ scoreOfTeamA = calcAverage(85, 54, 41);
 scoreOfTeamB = calcAverage(23, 34, 27);
 console.log(scoreOfTeamA, scoreOfTeamB);
 checkWinner(scoreOfTeamA, scoreOfTeamB);
+*/
+
+// ****************************************************
+
+// Arrays
+
+// ****************************************************
+
+const friend1 = "Ram";
+const friend2 = "Laksman";
+const friend3 = "Bharat";
+
+const friends = ["Ram", "Laksman", "Bharat"];
+console.log(friends);
+
+const years = new Array(1900, 1999, 2016, 2022);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends[1]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Satrugna";
+console.log(friends);
+
+// friends = ["Jimi", "Boss"]; // Cannot redefine the array
+
+const firstName = "Jimi";
+const jimi = [firstName, "Chhatrala", 2022 - 2000, "Coder", friends];
+console.log(jimi);
+console.log(jimi.length);
+
+// Exercise
+
+const calcAge = function (birthYear) {
+  return 2022 - birthYear;
+};
+
+const yearOfBirth = [1900, 1950, 1999, 2002, 2018];
+
+const age1 = calcAge(yearOfBirth[0]);
+const age2 = calcAge(yearOfBirth[1]);
+const age3 = calcAge(yearOfBirth[yearOfBirth.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(yearOfBirth[0]),
+  calcAge(yearOfBirth[1]),
+  calcAge(yearOfBirth[yearOfBirth.length - 1]),
+];
+
+console.log(ages);
