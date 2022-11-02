@@ -321,7 +321,7 @@ console.log(bills, tips, totals);
 // Objects
 
 // *******************************************************
-
+/*
 // Used for ordered and structured data
 
 const jimiArray = [
@@ -345,3 +345,56 @@ const jimiObject = {
 };
 
 console.log(jimiObject);
+*/
+
+//*******************************************************
+
+// Objects with dot (.) and ([]) notations
+
+// *******************************************************
+
+const jimiObject = {
+  firstName: "Jimi",
+  lastName: "Chhatrala",
+  age: 2022 - 2000,
+  job: "coder",
+  friends: ["Ram", "Shyam", "Lakshman"],
+};
+
+// On console object properties are in alphabetic ordered
+
+console.log(jimiObject);
+
+console.log(jimiObject.lastName);
+console.log(jimiObject["lastName"]);
+
+const nameCommonKey = "Name";
+
+console.log(jimiObject["first" + nameCommonKey]);
+console.log(jimiObject["last" + nameCommonKey]);
+
+// console.log(jimiObject.'last'+nameCommonKey);
+
+// const interestedIn = prompt(
+//   "What do you want to know about Jimi? Choose from firstName, lastName, age, job, and friends"
+// );
+
+// if (jimiObject[interestedIn]) {
+//   console.log(jimiObject[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose from firstName, lastName, age, job, and friends"
+//   );
+// }
+
+jimiObject.location = "India";
+jimiObject.twitter = "@jimichhatrala";
+console.log(jimiObject);
+
+// Challenge
+
+// "Jimi has 3 friends, and his best friend is called Ram"
+
+console.log(
+  `${jimiObject.firstName} has ${jimiObject.friends.length} friends, and his best friend is called ${jimiObject.friends[0]}.`
+);
