@@ -300,7 +300,7 @@ if (friends.includes("Jimi")) {
 // Problem Statement
 
 // *******************************************************
-
+/*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
@@ -314,3 +314,34 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
+*/
+
+// *******************************************************
+
+// Objects
+
+// *******************************************************
+
+// Used for ordered and structured data
+
+const jimiArray = [
+  "Jimi",
+  "Chhatrala",
+  2022 - 2000,
+  "coder",
+  ["Ram", "Shyam", "Lakshman"],
+];
+
+console.log(jimiArray);
+
+// Used for un-ordered and unstructured data
+
+const jimiObject = {
+  firstName: "Jimi",
+  lastName: "Chhatrala",
+  age: 2022 - 2000,
+  job: "coder",
+  friends: ["Ram", "Shyam", "Lakshman"],
+};
+
+console.log(jimiObject);
