@@ -404,7 +404,7 @@ console.log(
 // Object Methods
 
 // *******************************************************
-
+/*
 const jimi = {
   firstName: "Jimi",
   lastName: "Chhatrala",
@@ -449,3 +449,84 @@ console.log(jimi.age);
 console.log(jimi.age);
 console.log(jimi["calcAge"](2000));
 console.log(jimi.getSummary());
+*/
+// **********************************************************
+
+// Problem Statement
+
+// **********************************************************
+
+// MY TRY
+
+// const salmanKhan = {
+//   fullName: "Salman Khan",
+//   mass: 78,
+//   height: 1.69,
+
+//   calcBMI: function () {
+//     return this.mass / this.height ** 2;
+//   },
+// };
+
+// const amirKhan = {
+//   fullName: "Amir Khan",
+//   mass: 92,
+//   height: 1.95,
+
+//   calcBMI: function () {
+//     return this.mass / this.height ** 2;
+//   },
+// };
+
+// console.log(
+//   `${
+//     salmanKhan.calcBMI() > amirKhan.calcBMI()
+//       ? `${
+//           salmanKhan.fullName
+//         }'s BMI (${salmanKhan.calcBMI()}) is higher than ${
+//           amirKhan.fullName
+//         }'s BMI (${amirKhan.calcBMI()})!`
+//       : `${amirKhan.fullName}'s BMI (${amirKhan.calcBMI()}) is higher than ${
+//           salmanKhan.fullName
+//         }'s BMI (${salmanKhan.calcBMI()})!`
+//   }`
+// );
+
+// ACTUAL CODE
+
+const salmanKhan = {
+  fullName: "Salman Khan",
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+const amirKhan = {
+  fullName: "Amir Khan",
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+salmanKhan.calcBMI();
+amirKhan.calcBMI();
+
+console.log(salmanKhan.bmi, amirKhan.bmi);
+
+if (salmanKhan.bmi > amirKhan.bmi) {
+  console.log(
+    `${salmanKhan.fullName}'s BMI (${salmanKhan.bmi}) is higher than ${amirKhan.fullName}'s BMI (${amirKhan.bmi})`
+  );
+} else if (amirKhan.bmi > salmanKhan.bmi) {
+  console.log(
+    `${salmanKhan.fullName}'s BMI (${salmanKhan.bmi}) is higher than ${amirKhan.fullName}'s BMI (${amirKhan.bmi})`
+  );
+}
