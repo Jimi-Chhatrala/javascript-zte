@@ -352,7 +352,7 @@ console.log(jimiObject);
 // Objects with dot (.) and ([]) notations
 
 // *******************************************************
-
+/*
 const jimiObject = {
   firstName: "Jimi",
   lastName: "Chhatrala",
@@ -398,3 +398,54 @@ console.log(jimiObject);
 console.log(
   `${jimiObject.firstName} has ${jimiObject.friends.length} friends, and his best friend is called ${jimiObject.friends[0]}.`
 );
+*/
+//*******************************************************
+
+// Object Methods
+
+// *******************************************************
+
+const jimi = {
+  firstName: "Jimi",
+  lastName: "Chhatrala",
+  birthYear: 2000,
+  job: "coder",
+  friends: ["Ram", "Lakhan", "Shivam"],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2022 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2022 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    // console.log(this);
+
+    // Store value to new property so as not to calcualte again and again while calling calcAge() method
+
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+
+  // Jimi is a 22-years old Coder, and he has a/not driver's license.
+
+  getSummary: function () {
+    // Here in age(22-year old) we use calcAge() method because we cannot assume that if calcAge() method has already called before and a new property age is defined as a member of the object in past future.
+
+    return `${this.firstName} is a ${this.age}-years old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
+};
+
+console.log(jimi.calcAge(2000));
+console.log(jimi.calcAge());
+console.log(jimi.age);
+console.log(jimi.age);
+console.log(jimi.age);
+console.log(jimi["calcAge"](2000));
+console.log(jimi.getSummary());
