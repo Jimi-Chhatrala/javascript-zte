@@ -561,7 +561,7 @@ for (let rep = 1; rep <= 10; rep++) {
 // Looping Arrays, Breaking and Continuing
 
 // ***************************************************************
-
+/*
 const jimi = [
   "Jimi",
   "Chhatrala",
@@ -619,4 +619,35 @@ for (let i = 0; i < jimi.length; i++) {
   if (typeof jimi[i] === "number") break;
 
   console.log(jimi[i], typeof jimi[i]);
+}
+*/
+// ***************************************************************
+
+// Looping Backwards and loops in loops
+
+// ***************************************************************
+
+// Looping Backwards
+
+const jimi = [
+  "Jimi",
+  "Chhatrala",
+  2022 - 2000,
+  "coder",
+  ["Ram", "Lakshman", "Bharat"],
+  true,
+];
+
+for (let i = jimi.length - 1; i >= 0; i--) {
+  console.log(i, jimi[i]);
+}
+
+// Loops in loops
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--------------- Starting exercise ${exercise} ---------------`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repitition ${rep} 🏋🏼‍♂️`);
+  }
 }
