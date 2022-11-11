@@ -550,7 +550,73 @@ if (salmanKhan.bmi > amirKhan.bmi) {
 // console.log("Lifting weights repetition 10");
 
 // for loop keeps running while condition is TURE
-
+/*
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep} 🏋🏼‍♂️`);
+}
+*/
+
+// ***************************************************************
+
+// Looping Arrays, Breaking and Continuing
+
+// ***************************************************************
+
+const jimi = [
+  "Jimi",
+  "Chhatrala",
+  2022 - 2000,
+  "coder",
+  ["Ram", "Lakshman", "Bharat"],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < jimi.length; i++) {
+  // Reading from jimi array
+
+  console.log(jimi[i], typeof jimi[i]);
+
+  // Filling types array
+
+  // Way 1
+  // types[i] = typeof jimi[i];
+
+  // Way 2
+  types.push(typeof jimi[i]);
+}
+
+console.log(types);
+
+// Example 2
+
+const years = [1991, 2007, 1969, 2020];
+
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2022 - years[i]);
+}
+
+console.log(ages);
+
+// Continue Statement
+
+console.log("------ ONLY STRINGS ------");
+
+for (let i = 0; i < jimi.length; i++) {
+  if (typeof jimi[i] !== "string") continue;
+
+  console.log(jimi[i], typeof jimi[i]);
+}
+
+// Break Statement
+
+console.log("------ Break On Number Type Occur ------");
+
+for (let i = 0; i < jimi.length; i++) {
+  if (typeof jimi[i] === "number") break;
+
+  console.log(jimi[i], typeof jimi[i]);
 }
