@@ -493,7 +493,7 @@ console.log(jimi.getSummary());
 // );
 
 // ACTUAL CODE
-
+/*
 const salmanKhan = {
   fullName: "Salman Khan",
   mass: 78,
@@ -529,4 +529,28 @@ if (salmanKhan.bmi > amirKhan.bmi) {
   console.log(
     `${salmanKhan.fullName}'s BMI (${salmanKhan.bmi}) is higher than ${amirKhan.fullName}'s BMI (${amirKhan.bmi})`
   );
+}
+*/
+
+// ***********************************
+
+// Iteration with for loop
+
+// ***********************************
+
+// console.log("Lifting weights repetition 1");
+// console.log("Lifting weights repetition 2");
+// console.log("Lifting weights repetition 3");
+// console.log("Lifting weights repetition 4");
+// console.log("Lifting weights repetition 5");
+// console.log("Lifting weights repetition 6");
+// console.log("Lifting weights repetition 7");
+// console.log("Lifting weights repetition 8");
+// console.log("Lifting weights repetition 9");
+// console.log("Lifting weights repetition 10");
+
+// for loop keeps running while condition is TURE
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋🏼‍♂️`);
 }
