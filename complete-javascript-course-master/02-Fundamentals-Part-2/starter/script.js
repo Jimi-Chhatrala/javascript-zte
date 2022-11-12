@@ -682,7 +682,7 @@ while (dice !== 6) {
 // Problem statement
 
 // ***********************************************
-
+/*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
@@ -719,3 +719,4 @@ console.log(calcAverage([1, 2, 3, 4, 5]));
 
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
+*/
